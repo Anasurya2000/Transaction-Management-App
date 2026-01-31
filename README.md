@@ -10,12 +10,14 @@ Personal finance transaction tracker. View and add Income/Expense transactions w
 ## Setup
 
 1. Clone the repository:
+
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Anasurya2000/Transaction-Management-App.git
    cd transaction_management_app
    ```
 
 2. Install dependencies:
+
    ```bash
    flutter pub get
    ```
