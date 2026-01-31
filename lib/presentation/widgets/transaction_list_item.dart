@@ -12,20 +12,29 @@ class TransactionListItem extends StatelessWidget {
     final lower = '${t.title} ${t.message}'.toLowerCase();
     if (lower.contains('salary') ||
         lower.contains('income') ||
-        lower.contains('freelance'))
+        lower.contains('freelance')) {
       return Icons.payments;
-    if (lower.contains('rent') || lower.contains('house')) return Icons.home;
+    }
+    if (lower.contains('rent') || lower.contains('house')) {
+      return Icons.home;
+    }
     if (lower.contains('fuel') ||
         lower.contains('car') ||
-        lower.contains('transport'))
+        lower.contains('transport')) {
       return Icons.directions_bus;
-    if (lower.contains('dining') || lower.contains('restaurant'))
+    }
+    if (lower.contains('dining') || lower.contains('restaurant')) {
       return Icons.restaurant;
-    if (lower.contains('grocery') || lower.contains('shopping'))
+    }
+    if (lower.contains('grocery') || lower.contains('shopping')) {
       return Icons.shopping_cart;
-    if (lower.contains('electricity') || lower.contains('internet'))
+    }
+    if (lower.contains('electricity') || lower.contains('internet')) {
       return Icons.bolt;
-    if (t.isIncome) return Icons.payments;
+    }
+    if (t.isIncome) {
+      return Icons.payments;
+    }
     return Icons.receipt_long;
   }
 

@@ -187,6 +187,7 @@ class _AddTransactionScreenState extends State<AddTransactionScreen> {
                         _FormLabel('Amount'),
                         const SizedBox(height: 8),
                         TextField(
+                          key: const Key('amount_field'),
                           controller: _amountController,
                           decoration: _inputDecoration(
                             hint: '0.00',
@@ -200,6 +201,7 @@ class _AddTransactionScreenState extends State<AddTransactionScreen> {
                         _FormLabel('Expense Title'),
                         const SizedBox(height: 8),
                         TextField(
+                          key: const Key('title_field'),
                           controller: _titleController,
                           decoration: _inputDecoration(
                             hint: 'e.g. House Rental Income',
